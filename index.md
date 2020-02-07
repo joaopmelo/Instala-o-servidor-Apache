@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/joaopmelo/Instalacao-Servidor-Apache/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+# Instalando o Servido Apache
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Estrutura de arquivos de configuração do Apache
 
-### Markdown
+  _/etc/apache2/_
+              _ports.conf_
+              _apache.conf_
+              _/sites-available_
+              _/sites-enable_
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Primeiro instale o apache utilizando os comandos abaixo:
 
-```markdown
-Syntax highlighted code block
+ sudo apt-get install apache2
 
-# Header 1
-## Header 2
-### Header 3
+### Após a instalação estar concluída verifique se o serviço do Apache foi iniciado com sucesso utilizando os seguintes comando:
 
-- Bulleted
-- List
+ systemctl status apache2
 
-1. Numbered
-2. List
+## Configurando configurando hosts virtuais
 
-**Bold** and _Italic_ and `Code` text
+### No /etc/apache2/ existem dois diret贸rios que utilizaremos para configurar os nossos hosts virtuais para que possamos hospedar varios sites no nosso servidor. Sendo eles:
 
-[Link](url) and ![Image](src)
-```
+    * sites-available  - Diretório onde ficará disponível o arquivo de configuração do host de cada site.
+    * sites-enable     - Diretório onde ficará os arquivos de configuração dos hosts ativos.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## No diretório sites-available existe um arquivo chamado "000-default.conf" o qual iremos fazer uma cópia com o nome do nosso site:
 
-### Jekyll Themes
+    cp 000-default.conf nomesite.conf
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/joaopmelo/Instalacao-Servidor-Apache/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Logo após o editamos:
 
-### Support or Contact
+    sudo nano nomesite.conf
+    
+   
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+        
+    
+
