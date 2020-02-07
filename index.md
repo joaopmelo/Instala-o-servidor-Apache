@@ -4,10 +4,10 @@
 ## Estrutura de arquivos de configuração do Apache
 
   _/etc/apache2/_
-              _ports.conf_
-              _apache.conf_
-              _/sites-available_
-              _/sites-enable_
+              '_ports.conf_'
+              '_apache.conf_'
+              '_/sites-available_'
+              '_/sites-enable_'
 
 ## Primeiro instale o apache utilizando os comandos abaixo:
 
