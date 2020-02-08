@@ -1,6 +1,6 @@
 
 # Instalando o Servido Apache
-===
+_______________________________
 
 ## Estrutura de arquivos de configuração do Apache
 
@@ -22,10 +22,23 @@
 
  systemctl status apache2
 
-## Configurando configurando hosts virtuais
-===
 
-### No /etc/apache2/ existem dois diret贸rios que utilizaremos para configurar os nossos hosts virtuais para que possamos hospedar varios sites no nosso servidor. Sendo eles:
+## Criar estrutura de diretórios
+__________________________________________________________________
+
+* Primeiro vamos criar o diretório onde ficarão os arquivos do nosso site  
+
+`sudo mkdir /var/www/nomesite`  
+
+* Agora vamos alterar a propriedade do diretório criado do ROOT para nosso usuário para que possamos modificar os arquivos.
+`sudo chown -R $USER:$USER /var/www/nomesite`  
+
+ _Obs: A variável `$USER` representa o usuário o qual você está logado atualmente._  
+
+## Configurando configurando hosts virtuais
+_____________________________________________
+
+### No /etc/apache2/ existem dois diretórios que utilizaremos para configurar os nossos hosts virtuais para que possamos hospedar varios sites no nosso servidor. Sendo eles:
 
     * sites-available  - Diretório onde ficará disponível o arquivo de configuração do host de cada site.
     * sites-enable     - Diretório onde ficará os arquivos de configuração dos hosts ativos.
@@ -34,11 +47,23 @@
 
     cp 000-default.conf nomesite.conf
 
-### Logo após o editamos:
+### Logo após editamos o novo arquivo com previlégios de ROOT:
 
     sudo nano nomesite.conf
     
+### Agora o deixaremos da seguite forma e depois salvamos:
+
+   `<VirtualHost *:80>
+      ServerAdmin admin@nomesite.com
+      ServerName nomesite.com
+      ServerAlias www.nomesite.com
+      DocumentRoot /var/www/nomesite
+      ErrorLog ${APACHE_LOG_DIR}/error.log
+      CustomLog ${APACHE_LOG_DIR}/access.log combined
+    </VirtualHost>`
    
+
+ 
 
 
         
