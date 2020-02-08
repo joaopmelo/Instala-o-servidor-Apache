@@ -1,16 +1,17 @@
 
 # Instalando o Servido Apache
+================================
 
 ## Estrutura de arquivos de configuração do Apache
 
   /etc/apache2/  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
                -`ports.conf`  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
                -`apache.conf`  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
                -`/sites-available`  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
                -`/sites-enable`  
 
 ## Primeiro instale o apache utilizando os comandos abaixo:
@@ -22,6 +23,7 @@
  systemctl status apache2
 
 ## Configurando configurando hosts virtuais
+===========================================
 
 ### No /etc/apache2/ existem dois diret贸rios que utilizaremos para configurar os nossos hosts virtuais para que possamos hospedar varios sites no nosso servidor. Sendo eles:
 
