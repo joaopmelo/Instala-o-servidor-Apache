@@ -4,13 +4,13 @@
 ## Estrutura de arquivos de configuração do Apache
 
   /etc/apache2/  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp:|
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
                -`ports.conf`  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp|
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
                -`apache.conf`  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp               |
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
                -`/sites-available`  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp               |
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|
                -`/sites-enable`  
 
 ## Primeiro instale o apache utilizando os comandos abaixo:
