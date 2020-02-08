@@ -18,7 +18,7 @@ _______________________________
 
  sudo apt-get install apache2
 
-### Após a instalação estar concluída verifique se o serviço do Apache foi iniciado com sucesso utilizando os seguintes comando:
+##### Após a instalação estar concluída verifique se o serviço do Apache foi iniciado com sucesso utilizando os seguintes comando:
 
  systemctl status apache2
 
@@ -39,20 +39,20 @@ __________________________________________________________________
 ## Configurando configurando hosts virtuais
 _____________________________________________  
 
-#### No /etc/apache2/ existem dois diretórios que utilizaremos para configurar os nossos hosts virtuais para que possamos hospedar varios sites no nosso servidor. Sendo eles:  
+##### No /etc/apache2/ existem dois diretórios que utilizaremos para configurar os nossos hosts virtuais para que possamos hospedar varios sites no nosso servidor. Sendo eles:  
 
     * sites-available  - Diretório onde ficará disponível o arquivo de configuração do host de cada site.  
     * sites-enable     - Diretório onde ficará os arquivos de configuração dos hosts ativos.
 
-#### No diretório sites-available existe um arquivo chamado "000-default.conf" o qual iremos fazer uma cópia com o nome do nosso site:  
+##### No diretório sites-available existe um arquivo chamado "000-default.conf" o qual iremos fazer uma cópia com o nome do nosso site:  
 
     cp 000-default.conf nomesite.conf  
 
-#### Logo após editamos o novo arquivo com previlégios de ROOT:  
+##### Logo após editamos o novo arquivo com previlégios de ROOT:  
 
     sudo nano nomesite.conf
     
-#### Agora o deixaremos da seguite forma e depois salvamos:  
+##### Agora o deixaremos da seguite forma e depois salvamos:  
 
    `<VirtualHost *:80>`  
       &ensp;&ensp;&ensp;&ensp;`ServerAdmin admin@nomesite.com`  
