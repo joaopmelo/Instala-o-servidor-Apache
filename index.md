@@ -4,8 +4,8 @@
 ## Estrutura de arquivos de configuração do Apache
 
   `_/etc/apache2/_`
-              `_ports.conf_`
-              `_apache.conf_`
+            \n  `_ports.conf_`
+             \n `_apache.conf_`
               `_/sites-available_`
               `_/sites-enable_`
 
