@@ -1,6 +1,6 @@
 
 # Instalando o Servido Apache
-================================
+===
 
 ## Estrutura de arquivos de configuração do Apache
 
@@ -23,7 +23,7 @@
  systemctl status apache2
 
 ## Configurando configurando hosts virtuais
-===========================================
+===
 
 ### No /etc/apache2/ existem dois diret贸rios que utilizaremos para configurar os nossos hosts virtuais para que possamos hospedar varios sites no nosso servidor. Sendo eles:
 
