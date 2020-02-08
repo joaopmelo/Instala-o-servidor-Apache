@@ -54,14 +54,14 @@ _____________________________________________
     
 ### Agora o deixaremos da seguite forma e depois salvamos:  
 
-   `<VirtualHost *:80>  
-      &ensp;&ensp;&ensp;&ensp;ServerAdmin admin@nomesite.com  
-      &ensp;&ensp;&ensp;&ensp;ServerName nomesite.com  
-      &ensp;&ensp;&ensp;&ensp;ServerAlias www.nomesite.com  
-      &ensp;&ensp;&ensp;&ensp;DocumentRoot /var/www/nomesite  
-      &ensp;&ensp;&ensp;&ensp;ErrorLog ${APACHE_LOG_DIR}/error.log  
-      &ensp;&ensp;&ensp;&ensp;CustomLog ${APACHE_LOG_DIR}/access.log combined  
-    </VirtualHost>`  
+   `<VirtualHost *:80>`  
+      &ensp;&ensp;&ensp;&ensp;`ServerAdmin admin@nomesite.com`  
+      &ensp;&ensp;&ensp;&ensp;`ServerName nomesite.com`  
+      &ensp;&ensp;&ensp;&ensp;`ServerAlias www.nomesite.com`  
+      &ensp;&ensp;&ensp;&ensp;`DocumentRoot /var/www/nomesite`  
+      &ensp;&ensp;&ensp;&ensp;`ErrorLog ${APACHE_LOG_DIR}/error.log`  
+      &ensp;&ensp;&ensp;&ensp;`CustomLog ${APACHE_LOG_DIR}/access.log combined`  
+    `</VirtualHost>`  
    
 
  
