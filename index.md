@@ -4,9 +4,9 @@
 ## Estrutura de arquivos de configuração do Apache
 
   /etc/apache2/  
-               |
+&#160;&#160;&#160;&#160;|
                -`ports.conf`  
-               |
+&ensp;&ensp;&ensp;&ensp;|
                -`apache.conf`  
                |
                -`/sites-available`  
